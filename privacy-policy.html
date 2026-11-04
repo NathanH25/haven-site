@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haven Privacy Policy</title>
+<meta name="description" content="How Haven handles your data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="./">Haven</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav>
+  <h1>Haven Privacy Policy</h1>
+  <p class="muted">Effective: November 4, 2026 · App: Haven (com.haven.campuslife)</p>
+
+  <p>Haven is a personal planner for college students: budget, classes, deadlines, shifts and shared expenses. By default everything stays on your device. Roommate sync is optional; this policy explains exactly what changes if you turn it on.</p>
+
+  <h2>If you don't use roommate sync</h2>
+  <p><strong>We collect nothing.</strong> Haven has no ads, no analytics and no third-party tracking SDKs. Everything you enter is saved only in the app's private storage on your phone:</p>
+  <ul>
+    <li>The first name you choose to enter (optional)</li>
+    <li>Budget limits, transactions, recurring bills and paychecks, and notes</li>
+    <li>Class schedule, reminders and calendar events, including events you import from a .ics file</li>
+    <li>Work shifts, hourly wage (optional) and earnings totals</li>
+    <li>Names of roommates you add to the offline split tracker</li>
+    <li>Theme, appearance and security preferences</li>
+  </ul>
+
+  <h2>If you use roommate sync (optional)</h2>
+  <p>Roommate sync lets people in the same household share expenses and chat. To make that work, some data is stored on our server, which is hosted by Supabase (United States). Only what is listed here leaves your phone:</p>
+  <ul>
+    <li><strong>Email address</strong>: to sign you in with a one-time code. It is never shown to roommates, never used for marketing and never sold.</li>
+    <li><strong>Display name and emoji avatar</strong>: shown to people in your households.</li>
+    <li><strong>Household data</strong>: household names, who is a member, invite codes (stored only as a one-way hash), shared expenses, who owes what, and payment status.</li>
+    <li><strong>Household messages</strong>, including automatic payment reminders ("nudges").</li>
+    <li><strong>Reports and blocks</strong>: if you report a message, a copy of it, who sent it and which household it came from are kept so we can review it.</li>
+    <li><strong>Terms acceptance</strong>: which version of the <a href="terms.html">Terms of Use</a> you accepted and when.</li>
+    <li>Standard server logs (such as IP address and time of a request), kept by our hosting provider for security and abuse prevention.</li>
+  </ul>
+  <p><strong>Who can see it:</strong> only members of the same household, enforced by access rules on the server. Data is encrypted in transit (TLS) and at rest by our hosting provider. It is not end-to-end encrypted: the developer can technically access it, and only does so to operate the service, investigate reports, or when required by law. We never sell or share it for advertising.</p>
+  <p><strong>What never syncs:</strong> your personal budget, transactions, classes, reminders, calendar, shifts, wage and notes stay on your phone even when you use roommate sync.</p>
+  <p><strong>Sign-in on your phone:</strong> your sign-in session is stored in your phone's secure keystore (Android Keystore / iOS Keychain).</p>
+
+  <h2>How your on-device data is protected</h2>
+  <ul>
+    <li><strong>Encrypted at rest:</strong> Haven encrypts everything it saves with AES-256-GCM. The key is kept in your phone's secure hardware keystore, is never exported, and never leaves the device.</li>
+    <li><strong>Not backed up off the device:</strong> Haven excludes its data from Android cloud backup and device-to-device transfer, and its key is not synced to iCloud.</li>
+    <li><strong>Encrypted backups (optional):</strong> you can export a backup file locked with a passphrase you choose (PBKDF2 + AES-256-GCM). You decide where the file goes; we never receive it and cannot recover a forgotten passphrase.</li>
+    <li><strong>App lock (optional):</strong> requires your fingerprint, face or phone PIN to open Haven. Biometric data is handled by your phone and never reaches Haven.</li>
+    <li><strong>Private notifications:</strong> on Android, reminder text is hidden on a secure lock screen.</li>
+    <li><strong>Optional privacy screen:</strong> hides Haven in the recent-apps view and blocks screenshots.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Internet:</strong> used only for roommate sync, and only after you sign in.</li>
+    <li><strong>Notifications:</strong> alerts before deadlines and bills you create. Scheduled on your device; no push server is involved.</li>
+    <li><strong>Alarms &amp; reminders (Android, optional):</strong> exact-minute reminders, only if you turn on "Precise reminder timing."</li>
+    <li><strong>Biometrics (optional):</strong> only if you turn on App lock.</li>
+    <li><strong>Vibration:</strong> subtle haptic feedback.</li>
+    <li><strong>Files:</strong> only a .ics calendar or a Haven backup file you choose, read on your device.</li>
+  </ul>
+
+  <h2>Deleting your data</h2>
+  <ul>
+    <li><strong>Roommate sync account:</strong> open Haven → <em>Roommates</em> → <em>Open</em> → <em>People</em> → <strong>Delete account</strong> (see our <a href="delete-account.html">account deletion page</a>). This immediately and permanently deletes your account, profile, memberships, messages and your shares of expenses from our server. Expenses you paid for stay visible to your former household with you shown as "Former member". You can also email us to request deletion.</li>
+    <li><strong>Leaving a household</strong> removes your access to it; a household with no members left is deleted.</li>
+    <li><strong>On-device data:</strong> <em>Theme</em> tab → <em>Your data &amp; privacy</em> → <strong>Erase all data</strong> deletes your data and replaces the encryption key. Uninstalling also removes it.</li>
+    <li>Reported-message copies are kept up to 90 days for safety review, then deleted.</li>
+  </ul>
+
+  <h2>Messages and safety</h2>
+  <p>Text you post for your household (messages, names, expense titles) is automatically checked against a list of objectionable terms before it is saved; this check runs on our server and nothing is shared with third parties. You can report any household message and block any member from the chat. We review reports within 24 hours and may remove content or accounts that violate our rules (harassment, threats, hate, sexual content, spam). Contact us at the address below to report urgent issues.</p>
+
+  <h2>Children</h2>
+  <p>Haven is intended for college students and is not directed at children under 13. We do not knowingly collect information from children under 13; if you believe a child has created an account, contact us and we will delete it.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we will update this page and the effective date above, and tell you in the app before any new kind of data leaves your device.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:SUPPORT_EMAIL_HERE">SUPPORT_EMAIL_HERE</a></p>
+</main>
+</body>
+</html>
